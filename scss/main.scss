@@ -1,0 +1,272 @@
+// include resets partial
+@import "./resets";
+@import "./variables";
+@import "./utilities";
+
+
+body {
+    text-align: center;
+    background-color: rgb(56, 56, 56);
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 1rem auto;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 0.5rem 4rem;
+}
+
+.showcase {
+    position: relative;
+    // border: 1px solid green;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size: 1400px;
+    background: url("../../images/backimg.jpg") no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    z-index: 2;
+
+
+    .header-part {
+        flex: 1;
+        // border: 1px solid blue;
+        display: flex;
+        justify-content: space-between;
+        z-index: -1;
+
+        img {
+            margin-top: 1rem;
+            margin-left: 2rem;
+            width: 13rem;
+            height: 4rem;
+        }
+
+        button {
+            margin: 2rem 2rem;
+            width: 6rem;
+            height: 2rem;
+            border: none;
+            border-radius: 5px;
+            background: $button-color;
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .content {
+        flex: 9;
+        // border: 1px solid red;
+
+        .content-card {
+            height: 60%;
+            margin: 8rem 8rem;
+            // padding: 10rem 10rem;
+            // border: 1px solid white;
+
+
+        }
+    }
+}
+
+
+
+.input-field {
+    height: 3rem;
+    margin: 2rem 4rem;
+    // border: 1px solid green;
+
+    input {
+        height: 100%;
+        width: 65%;
+        float: left;
+    }
+
+    button {
+        background-color: $button-color;
+        height: 100%;
+        width: 35%;
+        float: right;
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+    }
+
+
+}
+
+.showcase::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 50px 50px 250px black;
+    z-index: -2;
+}
+
+
+
+
+.ads-text {
+    flex: 1;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.ads-text p {
+    font-size: 1.2rem;
+    position: relative;
+
+}
+
+.button-black {
+    text-decoration: none;
+    margin-top: 40px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    border: white 1px solid;
+    padding: 15px 30px 15px 30px;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.video-wrapper {
+    // border: 1px solid red;
+    z-index: 2;
+}
+
+.ads-video {
+
+    flex: 3;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-container {
+    position: absolute;
+    // border: 1px solid red;
+    display: block;
+    top: 18%;
+    left: 24%;
+
+
+    video {
+        margin-top: 3px;
+        width: 96%;
+        height: 95%
+    }
+}
+
+.ads-text-fix {
+    flex: 1;
+    text-align: center;
+
+}
+
+
+
+
+.questions {
+    background: black;
+    margin-top: 15px;
+    width: 100%;
+    height: 140vh;
+    text-align: center;
+}
+
+.questions h2 {
+    padding-top: 50px;
+}
+
+.question-section {
+    padding-top: 50px;
+}
+
+.question-list li {
+    margin: 0px 130px 0px 130px;
+
+    list-style-type: none;
+    padding: 5px;
+}
+
+.question-button {
+    text-align: left;
+    font-size: 24px;
+    background: rgb(99, 97, 97);
+    color: white;
+    border: none;
+    width: 80%;
+    padding: 22px;
+}
+
+.list-items p {
+
+    text-align: center;
+    margin-top: 10px;
+    background: rgb(99, 97, 97);
+    color: white;
+    text-align: left;
+    font-size: 23px;
+    line-height: 1.3em;
+}
+
+.answer-div {
+    width: 80%;
+    margin: 0 10%
+}
+
+
+.footer {
+    text-align: center;
+    background: black;
+    margin-top: 15px;
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+}
+
+.footer h4 {
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 40px;
+    font-size: 16px;
+    color: rgb(156, 156, 156);
+}
+
+.footer a {
+    font-size: 14px;
+    color: rgb(156, 156, 156);
+}
+
+.wrapper {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.wrapper p {
+    padding-top: 10px;
+}
